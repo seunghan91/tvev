@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root 'home#index'
-   get ':controller(/:action(/:id))'
+
+  get ':controller(/:action(/:id))'
   post ':controller(/:action(/:id))'
+
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
